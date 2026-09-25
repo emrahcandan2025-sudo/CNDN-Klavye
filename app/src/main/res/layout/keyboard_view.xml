@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#121212"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <!-- Öneri Çubuğu -->
+    <LinearLayout
+        android:id="@+id/suggestion_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:text="Tamam" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:text="Merhaba" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:text="Kaç" />
+    </LinearLayout>
+
+    <!-- Rakam Satırı (1-0) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <!-- 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 -->
+        <Button style="@style/KeyStyle" android:id="@+id/btn_1" android:text="1" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_2" android:text="2" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_3" android:text="3" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_4" android:text="4" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_5" android:text="5" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_6" android:text="6" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_7" android:text="7" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_8" android:text="8" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_9" android:text="9" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_0" android:text="0" />
+    </LinearLayout>
+
+    <!-- 1. Harf Satırı (QWERTYUIOPĞÜ) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <Button style="@style/KeyStyle" android:id="@+id/btn_q" android:text="Q" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_w" android:text="W" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_e" android:text="E" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_r" android:text="R" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_t" android:text="T" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_y" android:text="Y" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_u" android:text="U" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_i_up" android:text="İ" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_o" android:text="O" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_p" android:text="P" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_g_soft" android:text="Ğ" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_u_dot" android:text="Ü" />
+    </LinearLayout>
+
+    <!-- 2. Harf Satırı (ASDFGHJKLŞİ) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <Button style="@style/KeyStyle" android:id="@+id/btn_a" android:text="A" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_s" android:text="S" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_d" android:text="D" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_f" android:text="F" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_g" android:text="G" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_h" android:text="H" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_j" android:text="J" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_k" android:text="K" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_l" android:text="L" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_s_dot" android:text="Ş" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_i" android:text="I" />
+    </LinearLayout>
+
+    <!-- 3. Harf Satırı (Shift, ZXCVBNMÖÇ, Backspace) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <Button style="@style/KeyStyle" android:id="@+id/btn_shift" android:text="⇧" android:layout_weight="1.5" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_z" android:text="Z" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_x" android:text="X" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_c" android:text="C" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_v" android:text="V" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_b" android:text="B" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_n" android:text="N" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_m" android:text="M" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_o_dot" android:text="Ö" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_c_dot" android:text="Ç" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_backspace" android:text="⌫" android:layout_weight="1.5" />
+    </LinearLayout>
+
+    <!-- Alt Kontrol Satırı (123, Emoji, Space, Nokta, Enter) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <Button style="@style/KeyStyle" android:id="@+id/btn_mode" android:text="123" android:layout_weight="1.5" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_emoji" android:text="😊" android:layout_weight="1" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_space" android:text=" " android:layout_weight="4" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_dot" android:text="." android:layout_weight="1" />
+        <Button style="@style/KeyStyle" android:id="@+id/btn_enter" android:text="↵" android:layout_weight="1.5" />
+    </LinearLayout>
+
+</LinearLayout>
