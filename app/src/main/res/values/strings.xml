@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CNDN Klavye</string>
+    <string name="enable_keyboard">Klavyeyi Etkinleştir</string>
+    <string name="switch_keyboard">Klavyeyi Seç</string>
+    <string name="intro_text">CNDN Klavye\'yi kullanmaya başlamak için önce sistem ayarlarından etkinleştir, sonra klavye seçicisinden seç.</string>
+</resources>
